@@ -1,4 +1,5 @@
 import json
+import csv  # Import csv module
 from ortools.sat.python import cp_model
 import datetime
 import sys
@@ -23,7 +24,7 @@ def main():
     shifts = ['7am-5pm', '12pm-10pm']
     days_of_week = ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
     
-    # Corrected Patterns for days off
+    # Patterns for days off
     patterns = [
         {'week': 0, 'days_off': [0], 'desc': 'Saturday off'},
         {'week': 1, 'days_off': [1], 'desc': 'Sunday off'},
@@ -171,11 +172,25 @@ def main():
                 actual_days_off_names = [days_of_week[d] for d in actual_days_off]
                 print(f"    Expected Days Off: {', '.join(expected_days_off_names) if expected_days_off_names else 'None'}")
                 print(f"    Actual Days Off: {', '.join(actual_days_off_names) if actual_days_off_names else 'None'}")
-                # Check if expected days off match actual days off
+                # Check if expected days off are included in actual days off
                 if set(expected_days_off).issubset(set(actual_days_off)):
                     print("    Days off are correct.")
                 else:
                     print("    ERROR: Days off do not match the expected pattern!")
+        
+        ###### Write the schedule to a CSV file ######
+        with open('schedule.csv', 'w', newline='') as csvfile:
+            fieldnames = ['Date', 'Shift', 'Workers']
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+            for week in schedule:
+                for day in schedule[week]:
+                    date = schedule[week][day]['date']
+                    for shift in shifts:
+                        workers = ', '.join(schedule[week][day]['shifts'][shift])
+                        writer.writerow({'Date': date, 'Shift': shift, 'Workers': workers})
+        print("\nSchedule also saved to 'schedule.csv'.")
+
     else:
         print("No feasible solution found.")
 
