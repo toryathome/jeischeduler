@@ -122,6 +122,7 @@ def main():
     status = solver.Solve(model)
 
     if status == cp_model.FEASIBLE or status == cp_model.OPTIMAL:
+        found_an_issue = False
         schedule = {}
         # Initialize validation data structures
         worker_hours = {w: [0]*weeks for w in range(num_workers)}
@@ -154,16 +155,17 @@ def main():
         for w in range(num_workers):
             print(f"\nWorker: {worker_names[w]}")
             pattern = patterns[w % len(patterns)]
-            pattern_desc = pattern['desc']
-            print(f"  Days Off Pattern: {pattern_desc}")
             for week in range(weeks):
                 print(f"  Week {week + 1}:")
                 print(f"    Total Hours Worked: {worker_hours[w][week]} hours")
                 # Check if total hours are 40
                 if worker_hours[w][week] != 40:
+                    print(" ############    ERROR     ############")
                     print("    ERROR: Total hours not equal to 40!")
+                    print(" ############    ERROR     ############")
+                    found_an_issue = True
                 else:
-                    print("    Total hours are correct.")
+                    pass
                 # Verify days off
                 expected_days_off = patterns[(pattern['week'] + week) % len(patterns)]['days_off']
                 actual_days_off = worker_days_off[w][week]
@@ -174,9 +176,12 @@ def main():
                 print(f"    Actual Days Off: {', '.join(actual_days_off_names) if actual_days_off_names else 'None'}")
                 # Check if expected days off are included in actual days off
                 if set(expected_days_off).issubset(set(actual_days_off)):
-                    print("    Days off are correct.")
+                    pass
                 else:
+                    print(" ####################    ERROR    ####################")
                     print("    ERROR: Days off do not match the expected pattern!")
+                    print(" ####################    ERROR    ####################")
+                    found_an_issue = True
         
         ###### Write the schedule to a CSV file ######
         with open('schedule.csv', 'w', newline='') as csvfile:
@@ -190,9 +195,15 @@ def main():
                         workers = ', '.join(schedule[week][day]['shifts'][shift])
                         writer.writerow({'Date': date, 'Shift': shift, 'Workers': workers})
         print("\nSchedule also saved to 'schedule.csv'.")
-
+        if found_an_issue:
+            print(" #####################    ERROR     #####################")
+            print(" PLEASE REVIEW THE OUTPUT ABOVE, AN ISSUE WAS IDENTIFIED!")
+            print(" #####################    ERROR     #####################")
+            
     else:
-        print("No feasible solution found.")
+        print(" #########    ERROR     ###########")
+        print(" Error: No feasible solution found.")
+        print(" #########    ERROR     ###########")
 
 if __name__ == '__main__':
     main()
