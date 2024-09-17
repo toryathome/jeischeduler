@@ -49,17 +49,17 @@ If you're not familiar with Python or don't have it installed, follow these step
 2. **Install OR-Tools**:
 
    Open the Command Prompt (Windows) or Terminal (macOS/Linux) and run:
-       ```
-       pip install ortools
-       ```
+    ```
+    pip install ortools
+    ```
    If `pip` is not recognized, you may need to use `python -m pip install ortools`.
 
 ### For Users with Python Knowledge
 
 Ensure you have Python 3 installed, then install OR-Tools:
-    ```
-    pip install ortools
-    ```
+```
+pip install ortools
+```
 ---
 
 ## Usage
@@ -77,17 +77,17 @@ Ensure you have Python 3 installed, then install OR-Tools:
 3. **Run the Script**:
 
    - **Basic Usage**:
-         ```
-         python scheduler.py
-         ```
+        ```
+        python scheduler.py
+        ```
    - **With Custom Worker Names**:
          ```
          python scheduler.py workers.json
          ```
    - **With Previous Schedule and Custom Worker Names**:
-         ```
-         python scheduler.py previous_schedule.json workers.json
-         ```
+        ```
+        python scheduler.py previous_schedule.json workers.json
+        ```
    **Note**: Replace `workers.json` and `previous_schedule.json` with your filenames if different.
 
 4. **Output**:
@@ -101,9 +101,9 @@ The `workers.json` file contains a list of worker names. To customize:
 
 1. **Create or Edit `workers.json`**:
 
-       ```json
-       ["Alice", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Hannah"]
-       ```
+    ```json
+    ["Alice", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Hannah"]
+    ```
 
 2. **Ensure**:
 
@@ -121,9 +121,9 @@ To maintain continuity and avoid back-to-back extra staffing days:
 
 2. **Run the Script with the Previous Schedule**:
 
-       ```python
-       python scheduler.py previous_schedule.json workers.json
-       ```
+    ```python
+    python scheduler.py previous_schedule.json workers.json
+    ```
 
 ### Adjusting Scheduling Constraints
 
@@ -133,23 +133,22 @@ If you need to adjust the staffing minimums, maximums, or other constraints:
 
 2. **Locate the Constraints Section**:
 
-       # Staffing requirements for 7am-5pm shift
-       ```python
-       for d in range(total_days):
-           # Adjust the minimum and maximum number of workers as needed
-           model.Add(sum(shifts_var[(w, d, '7am-5pm')] for w in range(num_workers)) >= MIN_WORKERS)
-           model.Add(sum(shifts_var[(w, d, '7am-5pm')] for w in range(num_workers)) <= MAX_WORKERS)
-       ```
-
+    # Staffing requirements for 7am-5pm shift
+    ```python
+    for d in range(total_days):
+    # Adjust the minimum and maximum number of workers as needed
+      model.Add(sum(shifts_var[(w, d, '7am-5pm')] for w in range(num_workers)) >= MIN_WORKERS)
+      model.Add(sum(shifts_var[(w, d, '7am-5pm')] for w in range(num_workers)) <= MAX_WORKERS)```
+    ```
 3. **Change `MIN_WORKERS` and `MAX_WORKERS`**:
 
    - Replace `MIN_WORKERS` and `MAX_WORKERS` with the desired numbers.
 
    **Example**:
-       ```python
-       model.Add(sum(shifts_var[(w, d, '7am-5pm')] for w in range(num_workers)) >= 3)
-       model.Add(sum(shifts_var[(w, d, '7am-5pm')] for w in range(num_workers)) <= 4)
-       ```
+    ```python
+    model.Add(sum(shifts_var[(w, d, '7am-5pm')] for w in range(num_workers)) >= 3)
+    model.Add(sum(shifts_var[(w, d, '7am-5pm')] for w in range(num_workers)) <= 4)
+    ```
 
 4. **Save the File** and rerun the script.
 
@@ -253,6 +252,6 @@ This project is licensed under the MIT License. Feel free to use and modify the 
 
 ---
 
-**Note**: This scheduling tool is designed to help create fair and efficient work schedules. Always review the generated schedules to ensure they meet your organization's specific needs and comply with labor regulations.
+**Note**: This scheduling tool is designed to help create fair and efficient work schedules. Always review the generated schedules to ensure they meet your organization's specific needs and comply with labor regulations etc, idk, lol.
 
 ---
