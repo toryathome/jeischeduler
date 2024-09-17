@@ -1,0 +1,57 @@
+Date,Shift,Workers
+2024-09-17,7am-5pm,"Bob, Frank"
+2024-09-17,12pm-10pm,Charlie
+2024-09-18,7am-5pm,"Eva, Grace"
+2024-09-18,12pm-10pm,Alice
+2024-09-19,7am-5pm,"David, Frank, Grace, Hannah"
+2024-09-19,12pm-10pm,Bob
+2024-09-20,7am-5pm,"Charlie, David, Hannah"
+2024-09-20,12pm-10pm,Alice
+2024-09-21,7am-5pm,"Charlie, David, Eva, Frank, Hannah"
+2024-09-21,12pm-10pm,Alice
+2024-09-22,7am-5pm,"Bob, David, Eva, Grace, Hannah"
+2024-09-22,12pm-10pm,Alice
+2024-09-23,7am-5pm,"Bob, Eva, Grace"
+2024-09-23,12pm-10pm,"Charlie, Frank"
+2024-09-24,7am-5pm,"Alice, Eva"
+2024-09-24,12pm-10pm,Bob
+2024-09-25,7am-5pm,"Frank, Hannah"
+2024-09-25,12pm-10pm,David
+2024-09-26,7am-5pm,"Charlie, Eva, Frank, Grace"
+2024-09-26,12pm-10pm,Alice
+2024-09-27,7am-5pm,"Charlie, David, Eva, Grace"
+2024-09-27,12pm-10pm,"Bob, Hannah"
+2024-09-28,7am-5pm,"Alice, Charlie, David, Grace"
+2024-09-28,12pm-10pm,Frank
+2024-09-29,7am-5pm,"Bob, Charlie, Eva, Grace, Hannah"
+2024-09-29,12pm-10pm,David
+2024-09-30,7am-5pm,"Alice, Bob, Frank"
+2024-09-30,12pm-10pm,Hannah
+2024-10-01,7am-5pm,"Alice, David"
+2024-10-01,12pm-10pm,Hannah
+2024-10-02,7am-5pm,"Alice, Grace"
+2024-10-02,12pm-10pm,"Charlie, Eva"
+2024-10-03,7am-5pm,"Bob, Frank, Grace, Hannah"
+2024-10-03,12pm-10pm,David
+2024-10-04,7am-5pm,"Bob, Charlie, Eva, Frank"
+2024-10-04,12pm-10pm,Hannah
+2024-10-05,7am-5pm,"Alice, Bob, Frank, Grace"
+2024-10-05,12pm-10pm,Eva
+2024-10-06,7am-5pm,"Bob, Charlie, David"
+2024-10-06,12pm-10pm,Frank
+2024-10-07,7am-5pm,"Alice, Charlie, David, Grace, Hannah"
+2024-10-07,12pm-10pm,Eva
+2024-10-08,7am-5pm,"Charlie, Hannah"
+2024-10-08,12pm-10pm,David
+2024-10-09,7am-5pm,"Bob, Frank, Hannah"
+2024-10-09,12pm-10pm,David
+2024-10-10,7am-5pm,"Alice, Bob, Eva, Frank"
+2024-10-10,12pm-10pm,Charlie
+2024-10-11,7am-5pm,"Alice, David, Eva, Grace"
+2024-10-11,12pm-10pm,Hannah
+2024-10-12,7am-5pm,"Alice, Bob, Charlie, Grace"
+2024-10-12,12pm-10pm,"Eva, Frank"
+2024-10-13,7am-5pm,"Alice, Bob, Grace, Hannah"
+2024-10-13,12pm-10pm,Eva
+2024-10-14,7am-5pm,"Charlie, David, Grace"
+2024-10-14,12pm-10pm,Frank

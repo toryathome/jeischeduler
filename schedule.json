@@ -4,11 +4,11 @@
             "date": "2024-09-17",
             "shifts": {
                 "7am-5pm": [
-                    "Frank",
-                    "Grace"
+                    "Bob",
+                    "Frank"
                 ],
                 "12pm-10pm": [
-                    "Bob"
+                    "Charlie"
                 ]
             }
         },
@@ -28,12 +28,13 @@
             "date": "2024-09-19",
             "shifts": {
                 "7am-5pm": [
-                    "Charlie",
+                    "David",
                     "Frank",
+                    "Grace",
                     "Hannah"
                 ],
                 "12pm-10pm": [
-                    "David"
+                    "Bob"
                 ]
             }
         },
@@ -41,14 +42,12 @@
             "date": "2024-09-20",
             "shifts": {
                 "7am-5pm": [
-                    "Bob",
                     "Charlie",
-                    "Frank",
-                    "Grace",
+                    "David",
                     "Hannah"
                 ],
                 "12pm-10pm": [
-                    "David"
+                    "Alice"
                 ]
             }
         },
@@ -56,14 +55,14 @@
             "date": "2024-09-21",
             "shifts": {
                 "7am-5pm": [
-                    "Alice",
-                    "Bob",
+                    "Charlie",
+                    "David",
                     "Eva",
+                    "Frank",
                     "Hannah"
                 ],
                 "12pm-10pm": [
-                    "Charlie",
-                    "David"
+                    "Alice"
                 ]
             }
         },
@@ -71,12 +70,14 @@
             "date": "2024-09-22",
             "shifts": {
                 "7am-5pm": [
-                    "Alice",
+                    "Bob",
+                    "David",
                     "Eva",
+                    "Grace",
                     "Hannah"
                 ],
                 "12pm-10pm": [
-                    "David"
+                    "Alice"
                 ]
             }
         },
@@ -84,14 +85,13 @@
             "date": "2024-09-23",
             "shifts": {
                 "7am-5pm": [
-                    "Alice",
                     "Bob",
-                    "Charlie",
                     "Eva",
-                    "Frank"
+                    "Grace"
                 ],
                 "12pm-10pm": [
-                    "Grace"
+                    "Charlie",
+                    "Frank"
                 ]
             }
         }
@@ -102,10 +102,10 @@
             "shifts": {
                 "7am-5pm": [
                     "Alice",
-                    "Frank"
+                    "Eva"
                 ],
                 "12pm-10pm": [
-                    "Eva"
+                    "Bob"
                 ]
             }
         },
@@ -113,12 +113,11 @@
             "date": "2024-09-25",
             "shifts": {
                 "7am-5pm": [
-                    "Bob",
-                    "David"
-                ],
-                "12pm-10pm": [
                     "Frank",
                     "Hannah"
+                ],
+                "12pm-10pm": [
+                    "David"
                 ]
             }
         },
@@ -126,12 +125,13 @@
             "date": "2024-09-26",
             "shifts": {
                 "7am-5pm": [
-                    "Bob",
                     "Charlie",
+                    "Eva",
+                    "Frank",
                     "Grace"
                 ],
                 "12pm-10pm": [
-                    "Hannah"
+                    "Alice"
                 ]
             }
         },
@@ -142,11 +142,11 @@
                     "Charlie",
                     "David",
                     "Eva",
-                    "Frank",
                     "Grace"
                 ],
                 "12pm-10pm": [
-                    "Alice"
+                    "Bob",
+                    "Hannah"
                 ]
             }
         },
@@ -154,14 +154,13 @@
             "date": "2024-09-28",
             "shifts": {
                 "7am-5pm": [
-                    "Bob",
+                    "Alice",
                     "Charlie",
                     "David",
-                    "Eva",
-                    "Hannah"
+                    "Grace"
                 ],
                 "12pm-10pm": [
-                    "Grace"
+                    "Frank"
                 ]
             }
         },
@@ -169,12 +168,14 @@
             "date": "2024-09-29",
             "shifts": {
                 "7am-5pm": [
-                    "Alice",
+                    "Bob",
                     "Charlie",
+                    "Eva",
+                    "Grace",
                     "Hannah"
                 ],
                 "12pm-10pm": [
-                    "Grace"
+                    "David"
                 ]
             }
         },
@@ -184,11 +185,10 @@
                 "7am-5pm": [
                     "Alice",
                     "Bob",
-                    "Eva",
                     "Frank"
                 ],
                 "12pm-10pm": [
-                    "David"
+                    "Hannah"
                 ]
             }
         }
@@ -199,10 +199,10 @@
             "shifts": {
                 "7am-5pm": [
                     "Alice",
-                    "Hannah"
+                    "David"
                 ],
                 "12pm-10pm": [
-                    "David"
+                    "Hannah"
                 ]
             }
         },
@@ -211,11 +211,11 @@
             "shifts": {
                 "7am-5pm": [
                     "Alice",
-                    "Charlie",
-                    "Eva"
+                    "Grace"
                 ],
                 "12pm-10pm": [
-                    "Grace"
+                    "Charlie",
+                    "Eva"
                 ]
             }
         },
@@ -223,13 +223,13 @@
             "date": "2024-10-03",
             "shifts": {
                 "7am-5pm": [
-                    "Alice",
                     "Bob",
-                    "Charlie",
-                    "Frank"
+                    "Frank",
+                    "Grace",
+                    "Hannah"
                 ],
                 "12pm-10pm": [
-                    "Hannah"
+                    "David"
                 ]
             }
         },
@@ -238,11 +238,12 @@
             "shifts": {
                 "7am-5pm": [
                     "Bob",
+                    "Charlie",
                     "Eva",
                     "Frank"
                 ],
                 "12pm-10pm": [
-                    "Charlie"
+                    "Hannah"
                 ]
             }
         },
@@ -250,11 +251,10 @@
             "date": "2024-10-05",
             "shifts": {
                 "7am-5pm": [
+                    "Alice",
                     "Bob",
-                    "David",
                     "Frank",
-                    "Grace",
-                    "Hannah"
+                    "Grace"
                 ],
                 "12pm-10pm": [
                     "Eva"
@@ -267,12 +267,10 @@
                 "7am-5pm": [
                     "Bob",
                     "Charlie",
-                    "David",
-                    "Frank",
-                    "Grace"
+                    "David"
                 ],
                 "12pm-10pm": [
-                    "Alice"
+                    "Frank"
                 ]
             }
         },
@@ -280,11 +278,13 @@
             "date": "2024-10-07",
             "shifts": {
                 "7am-5pm": [
+                    "Alice",
+                    "Charlie",
+                    "David",
                     "Grace",
                     "Hannah"
                 ],
                 "12pm-10pm": [
-                    "David",
                     "Eva"
                 ]
             }
@@ -296,10 +296,10 @@
             "shifts": {
                 "7am-5pm": [
                     "Charlie",
-                    "Grace"
+                    "Hannah"
                 ],
                 "12pm-10pm": [
-                    "Hannah"
+                    "David"
                 ]
             }
         },
@@ -308,10 +308,11 @@
             "shifts": {
                 "7am-5pm": [
                     "Bob",
-                    "David"
+                    "Frank",
+                    "Hannah"
                 ],
                 "12pm-10pm": [
-                    "Frank"
+                    "David"
                 ]
             }
         },
@@ -320,12 +321,11 @@
             "shifts": {
                 "7am-5pm": [
                     "Alice",
+                    "Bob",
                     "Eva",
-                    "Grace",
-                    "Hannah"
+                    "Frank"
                 ],
                 "12pm-10pm": [
-                    "Bob",
                     "Charlie"
                 ]
             }
@@ -335,12 +335,12 @@
             "shifts": {
                 "7am-5pm": [
                     "Alice",
+                    "David",
                     "Eva",
-                    "Frank",
                     "Grace"
                 ],
                 "12pm-10pm": [
-                    "David"
+                    "Hannah"
                 ]
             }
         },
@@ -349,12 +349,13 @@
             "shifts": {
                 "7am-5pm": [
                     "Alice",
+                    "Bob",
                     "Charlie",
-                    "Eva",
-                    "Frank"
+                    "Grace"
                 ],
                 "12pm-10pm": [
-                    "David"
+                    "Eva",
+                    "Frank"
                 ]
             }
         },
@@ -364,7 +365,7 @@
                 "7am-5pm": [
                     "Alice",
                     "Bob",
-                    "Charlie",
+                    "Grace",
                     "Hannah"
                 ],
                 "12pm-10pm": [
@@ -376,13 +377,12 @@
             "date": "2024-10-14",
             "shifts": {
                 "7am-5pm": [
-                    "Bob",
+                    "Charlie",
                     "David",
-                    "Frank",
-                    "Hannah"
+                    "Grace"
                 ],
                 "12pm-10pm": [
-                    "Grace"
+                    "Frank"
                 ]
             }
         }
