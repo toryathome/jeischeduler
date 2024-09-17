@@ -1,4 +1,4 @@
-# Worker Scheduling Program
+# Jei's Scheduler
 
 This repository contains a Python script that generates a monthly worker schedule based on specific constraints. The program ensures fair distribution of shifts among workers while adhering to operational requirements.
 
