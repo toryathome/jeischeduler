@@ -37,7 +37,7 @@ This repository contains a Python script that generates a monthly worker schedul
 
 ### For Non-Python Users
 
-If you're not familiar with Python or don't have it installed, please scroll righ down to:
+If you're not familiar with Python and want some hand-holding, please go ahead and navigate to:
 
 * [How to Get This All Working Without Much Prexisting Knowledge](#how-to-get-this-all-working-without-much-prexisting-knowledge)
 
@@ -252,8 +252,6 @@ Here we go:
   - Click on "Download Python 3.x.x" button.
 - **macOS Users:**
   - Scroll down to "Latest Python 3 Release" and click on "Download Python 3.x.x".
-- **Linux Users:**
-  - Use your software manager or package manager to install Python 3.
 
 **Step 4:** Run the installer:
 
@@ -263,8 +261,6 @@ Here we go:
   - Click "Install Now" and follow the prompts.
 - **macOS Users:**
   - Open the downloaded package file (`.pkg`) and follow the installation instructions.
-- **Linux Users:**
-  - Python 3 may already be installed. If not, open the Terminal and install it using your package manager.
 
 ---
 
