@@ -7,14 +7,15 @@ This repository contains a Python script that generates a monthly worker schedul
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Advanced Usage](#advanced-usage)
   - [Running the Script](#running-the-script)
   - [Editing `workers.json`](#editing-workersjson)
   - [Using a Previous Schedule](#using-a-previous-schedule)
   - [Adjusting Scheduling Constraints](#adjusting-scheduling-constraints)
 - [Constraints and Rules](#constraints-and-rules)
-- [Troubleshooting](#troubleshooting)
+- [Advanced Troubleshooting](#advanced-troubleshooting)
 - [FAQ](#faq)
+- [How to Get This All Working Without Much Prexisting Knowledge](#how-to-get-this-all-working-without-much-prexisting-knowledge)
 - [License](#license)
 
 ---
@@ -36,23 +37,9 @@ This repository contains a Python script that generates a monthly worker schedul
 
 ### For Non-Python Users
 
-If you're not familiar with Python or don't have it installed, follow these steps:
+If you're not familiar with Python or don't have it installed, please scroll righ down to:
 
-1. **Install Python 3**:
-
-   - **Windows**: Download and install from the official website: https://www.python.org/downloads/windows/
-   - **macOS**: Download and install from the official website: https://www.python.org/downloads/macos/
-   - **Linux**: Use your distribution's package manager (e.g., `sudo apt-get install python3`).
-
-   **Note**: During installation on Windows, make sure to check the box that says "Add Python to PATH".
-
-2. **Install OR-Tools**:
-
-   Open the Command Prompt (Windows) or Terminal (macOS/Linux) and run:
-    ```
-    pip install ortools
-    ```
-   If `pip` is not recognized, you may need to use `python -m pip install ortools`.
+* [How to Get This All Working Without Much Prexisting Knowledge](#how-to-get-this-all-working-without-much-prexisting-knowledge)
 
 ### For Users with Python Knowledge
 
@@ -62,7 +49,7 @@ pip install ortools
 ```
 ---
 
-## Usage
+## Advanced Usage
 
 ### Running the Script
 
@@ -198,7 +185,7 @@ The scheduling program adheres to the following constraints:
 
 ---
 
-## Troubleshooting
+## Advanced Troubleshooting
 
 - **No Feasible Solution Found**:
 
@@ -218,6 +205,7 @@ The scheduling program adheres to the following constraints:
   - Verify Python installation by running `python --version`.
   - Reinstall OR-Tools using `pip install ortools`.
 
+- Additionally, check if your issue is addressed down under [Basic Troubleshooting](#basic-troubleshooting)
 ---
 
 ## FAQ
@@ -243,6 +231,234 @@ Yes, but you'll need to update the `shifts` list and adjust any constraints that
 ### 4. **What if I don't have a previous schedule?**
 
 You can run the script without a previous schedule. The extra staffing days will be randomized without considering past schedules.
+
+
+---
+...
+> "Okay, but what if I don't even use python? This is all confusing, help."
+
+Here we go:
+## How to Get This All Working Without Much Prexisting Knowledge
+
+### 1- Install Python 3
+
+**Step 1:** Open your web browser (e.g., Chrome, Firefox, Edge).
+
+**Step 2:** Go to the official Python website: https://www.python.org/downloads/
+
+**Step 3:** Download the latest version of Python 3 for your operating system:
+
+- **Windows Users:**
+  - Click on "Download Python 3.x.x" button.
+- **macOS Users:**
+  - Scroll down to "Latest Python 3 Release" and click on "Download Python 3.x.x".
+- **Linux Users:**
+  - Use your software manager or package manager to install Python 3.
+
+**Step 4:** Run the installer:
+
+- **Windows Users:**
+  - Double-click the downloaded file (e.g., `python-3.x.x.exe`).
+  - In the installer, **check the box that says "Add Python 3.x to PATH"** at the bottom.
+  - Click "Install Now" and follow the prompts.
+- **macOS Users:**
+  - Open the downloaded package file (`.pkg`) and follow the installation instructions.
+- **Linux Users:**
+  - Python 3 may already be installed. If not, open the Terminal and install it using your package manager.
+
+---
+
+### 2- Install the Worker Scheduling Program
+
+**Step 1:** Download the program files:
+
+- Click on the link provided to download the `scheduler.py` script and any other necessary files.
+- Alternatively, if the files are provided as a ZIP archive, download and extract them to a folder on your computer (e.g., `C:\WorkerScheduler` or `Documents/WorkerScheduler`).
+
+**Step 2:** Install the required library (OR-Tools):
+
+- **Windows Users:**
+
+  - Open the **Command Prompt**:
+    - Press the **Windows key** on your keyboard.
+    - Type **"Command Prompt"**.
+    - Click on the **Command Prompt** application to open it.
+
+  - In the Command Prompt window, type:
+
+    ```
+    pip install ortools
+    ```
+
+  - Press **Enter** and wait for the installation to complete.
+
+- **macOS Users:**
+
+  - Open the **Terminal** application:
+    - Go to **Applications** > **Utilities** > **Terminal**.
+
+  - In the Terminal window, type:
+
+    ```
+    pip3 install ortools
+    ```
+
+  - Press **Enter** and wait for the installation to complete.
+
+- **Note:** If you receive a message saying that `pip` is not recognized, you may need to install `pip` or use the full path to Python.
+
+---
+
+### 3- Run the Program
+
+**Step 1:** Open the Command Prompt or Terminal:
+
+- **Windows Users:**
+  - Press the **Windows key**.
+  - Type **"Command Prompt"**.
+  - Click on the **Command Prompt** application.
+
+- **macOS Users:**
+  - Open **Terminal** from **Applications** > **Utilities**.
+
+**Step 2:** Navigate to the directory where you saved the program files:
+
+- In the Command Prompt or Terminal, type:
+
+  - **Windows Users:**
+
+    ```
+    cd path\to\your\folder
+    ```
+
+    Replace `path\to\your\folder` with the actual path (e.g., `C:\WorkerScheduler`).
+
+  - **macOS Users:**
+
+    ```
+    cd /path/to/your/folder
+    ```
+
+    Replace `/path/to/your/folder` with the actual path (e.g., `Documents/WorkerScheduler`).
+
+**Step 3:** Run the script:
+
+- **Windows Users:**
+
+   ```python scheduler.py```
+
+- **macOS Users:**
+
+   ```python3 scheduler.py```
+
+
+- Press **Enter** and wait for the program to run.
+
+**Step 4:** Wait for the program to complete:
+
+- The program will generate a schedule and save it as `schedule.json` and `schedule.csv` in the same folder.
+- The Command Prompt or Terminal will display messages indicating the progress.
+
+---
+
+### 4- View the Schedule
+
+**Step 1:** Locate the `schedule.csv` file in the program folder.
+
+**Step 2:** Open the `schedule.csv` file:
+
+- Double-click the file to open it in your default spreadsheet application (e.g., Microsoft Excel, Google Sheets, or LibreOffice Calc).
+
+**Step 3:** Review the schedule:
+
+- The schedule will display dates, shift times, and the workers assigned to each shift.
+
+---
+
+### Optional: Customize Worker Names
+
+If you want to use custom worker names:
+
+**Step 1:** Create a `workers.json` file:
+
+- Open a text editor (e.g., Notepad on Windows or TextEdit on macOS).
+- Enter the worker names in the following format: ```["Alice", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Hannah"]```
+
+Ensure that the names are enclosed in double quotes and separated by commas.
+
+- Save the file as `workers.json` in the program folder.
+
+**Step 2:** Run the script with the custom worker names:
+
+- In the Command Prompt or Terminal, run:
+
+- **Windows Users:**
+
+  ```
+  python scheduler.py workers.json
+  ```
+
+- **macOS Users:**
+
+  ```
+  python3 scheduler.py workers.json
+  ```
+
+---
+
+### Optional: Use a Previous Schedule
+
+To maintain continuity and avoid back-to-back extra staffing days:
+
+**Step 1:** Ensure you have the previous `schedule.json` file.
+
+**Step 2:** Run the script with the previous schedule:
+
+- In the Command Prompt or Terminal, run:
+
+- **Windows Users:**
+
+  ```
+  python scheduler.py schedule.json workers.json
+  ```
+
+- **macOS Users:**
+
+  ```
+  python3 scheduler.py schedule.json workers.json
+  ```
+
+- Replace `schedule.json` and `workers.json` with your actual filenames if different.
+
+---
+
+### Basic Troubleshooting
+
+- **"pip is not recognized" Error:**
+
+  - Ensure that Python was added to your system PATH during installation.
+  - Close and reopen the Command Prompt or Terminal.
+  - Alternatively, run the installation using:
+
+    ```
+    python -m pip install ortools
+    ```
+
+- **"No module named ortools" Error:**
+
+  - Ensure that you have installed the OR-Tools library.
+  - Run `pip install ortools` (Windows) or `pip3 install ortools` (macOS).
+
+- **Permission Errors:**
+  - Run the Command Prompt or Terminal as an administrator.
+  - Right-click on the Command Prompt icon and select "Run as administrator".
+ 
+- **Schedule Not Generated:**
+
+  - Ensure that you are in the correct directory where `scheduler.py` is located.
+  - Verify that all required files are present.
+
+
 
 ---
 
